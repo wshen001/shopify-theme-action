@@ -24,7 +24,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: 'Deploy Theme'
-        uses: wyugen/shopify-theme-action@v0.3
+        uses: wyugen/shopify-theme-action@v1
         with:
           SHOPIFY_STORE: ${{secrets.DP_SHOPIFY_STORE}}
           SHOPIFY_APP_PW: ${{secrets.DP_SHOPIFY_APP_PW}}
