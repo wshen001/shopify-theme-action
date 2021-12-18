@@ -79,6 +79,7 @@ const getThemeID = async (BASE_URL, prID) => {
 
 const main = async () => {
   const apiKey = core.getInput("SHOPIFY_API_KEY");
+  const apiVersion = core.getInput("SHOPIFY_API_VERSION");
   const password = core.getInput("SHOPIFY_APP_PW");
   const storeURL = core.getInput("SHOPIFY_STORE");
 
@@ -88,7 +89,7 @@ const main = async () => {
     "curl -s https://shopify.github.io/themekit/scripts/install.py | sudo python"
   );
 
-  const BASE_URL = `https://${apiKey}:${password}@${storeURL}/admin/api/2020-07`;
+  const BASE_URL = `https://${apiKey}:${password}@${storeURL}/admin/api/${apiVersion}`;
   const themeID = await getThemeID(BASE_URL, prID);
 
   if (themeID === 0) {
