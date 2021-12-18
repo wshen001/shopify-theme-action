@@ -29,6 +29,7 @@ jobs:
           SHOPIFY_STORE: ${{secrets.DP_SHOPIFY_STORE}}
           SHOPIFY_APP_PW: ${{secrets.DP_SHOPIFY_APP_PW}}
           SHOPIFY_API_KEY: ${{secrets.DP_SHOPIFY_API_KEY}}
+          SHOPIFY_API_VERSION: ${{secret.DP_SHOPIFY_API_VERSION}}
           github-token: ${{secrets.GITHUB_TOKEN}}
 ```
 
