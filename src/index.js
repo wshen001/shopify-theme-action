@@ -86,7 +86,7 @@ const main = async () => {
   const prID = parsePullRequestId(process.env.GITHUB_REF);
 
   await exec.exec(
-    "curl -s https://shopify.github.io/themekit/scripts/install.py | sudo python"
+    "curl -s https://shopify.dev/themekit.py | sudo python"
   );
 
   const BASE_URL = `https://${apiKey}:${password}@${storeURL}/admin/api/${apiVersion}`;
