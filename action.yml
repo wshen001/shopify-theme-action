@@ -1,4 +1,4 @@
-name: 'Shopify Theme Deploy Previews'
+name: 'Shopify Theme Deploy Previews (Forked)'
 description: 'Create deploy previews of commits in Pull Requests'
 author: 'wyugen'
 branding:
@@ -13,6 +13,9 @@ inputs:
     required: true
   SHOPIFY_API_KEY:
     description: 'API Key for private app'
+    required: true
+  SHOPIFY_API_VERSION:
+    description: 'API Version for private app'
     required: true
   github-token:
     description: 'Authentication Token'
